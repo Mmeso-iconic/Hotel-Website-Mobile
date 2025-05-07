@@ -28,8 +28,8 @@ const renderWhyChooseUs = whychooseus => {
         container.innerHTML += `
             <div class ="Whychooseus">
                 <img src="${item.Image}" alt="${item.title}" className ="why-icon">
-                <h3>${item.title}</h3>
-                <p>${item.paragraph}</p>
+                <h3 class="header_h3" >${item.title}</h3>
+                <p class="header_para">${item.paragraph}</p>
             </div>
         `;
     })
@@ -43,7 +43,10 @@ const specialOffers = [
     {
         ratingimg1: 'assets/icons/Rating_Rectangle.svg',
         ratingimg2: 'assets/icons/Ratingstar.svg',
-        ratingnum: 'assets/icons/4.8.svg',
+        ratingnum: '4.8',
+        faveimage: 'assets/icons/favbtn_icon.svg',
+        favecircle: 'assets/icons/favbtn-circle.svg',
+        offerimage: 'assets/images/hotel_bedroom1.png',
         Caption: 'Wilderness Club at Big Ceddar',
         date: '28 October — 1 November',
         price: '$2016',
@@ -52,7 +55,10 @@ const specialOffers = [
     {
         ratingimg1: 'assets/icons/Rating_Rectangle.svg',
         ratingimg2: 'assets/icons/Ratingstar.svg',
-        ratingnum: 'assets/icons/4.8.svg',
+        ratingnum: '4.8',
+        faveimage: 'assets/icons/favbtn_icon.svg',
+        favecircle: 'assets/icons/favbtn-circle.svg',
+        offerimage: 'assets/images/Hotel_bedroom2.png',
         Caption: 'Wilderness Club at Big Ceddar',
         date: '28 October — 1 November',
         price: '$2016',
@@ -61,7 +67,10 @@ const specialOffers = [
     {
         ratingimg1: 'assets/icons/Rating_Rectangle.svg',
         ratingimg2: 'assets/icons/Ratingstar.svg',
-        ratingnum: 'assets/icons/4.8.svg',
+        ratingnum: '4.8',
+        faveimage: 'assets/icons/favbtn_icon.svg',
+        favecircle: 'assets/icons/favbtn-circle.svg',
+        offerimage: 'assets/images/hotel_bedroom3.png',
         Caption: 'Wilderness Club at Big Ceddar',
         date: '28 October — 1 November',
         price: '$2016',
@@ -73,14 +82,24 @@ const renderSpecialOffers = specialOffers => {
         specialOffers.forEach(offer => {
         container.innerHTML += `
             <div class = "specialoffers">
-                <img src="${offer.ratingimg1}" alt="${offer.Caption}" className ="ratingrectangle">
-                <img src="${offer.ratingimg2}" alt="${offer.Caption}" className ="ratingstar">
-                <img src="${offer.ratingnum}" alt="${offer.Caption}" className ="ratingnum">
-                <h3>${offer.Caption}</h3>
-                <p>${offer.date}</p>
+                <div class = "offerimages"  style="background-image: url(${offer.offerimage})">
+                    <div>
+                        <img src="${offer.ratingimg1}" alt="${offer.Caption}" class ="ratingrectangle">
+                        <div class="rating">
+                            <img src="${offer.ratingimg2}" alt="${offer.Caption}" class ="ratingstar">
+                            <p class ="ratingnum">${offer.ratingnum}</p>
+                        </div>
+                    </div>
+                    <div class="offer_fav">
+                        <img src="${offer.faveimage}" alt="${offer.Caption}" class ="Faveicon">
+                        <img src="${offer.favecircle}" alt="${offer.Caption}" class ="Faveicon_bg">
+                    </div>                
+                </div>
+                <h3 class="header_h3">${offer.Caption}</h3>
+                <p class="header_para">${offer.date}</p>
                 <div class="price_period">
-                    <p>${offer.price}</p>
-                    <p>${offer.period}</p>
+                    <p class="offer_price">${offer.price}</p>
+                    <p class="offer_period">${offer.period}</p>
                 </div>
             </div>
         `;
@@ -95,33 +114,93 @@ const reviews = [
     {
         customer: 'assets/Images/customer1.png',
         customer_review: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
-        customer_name: 'Jannike Borg, Publisher'
+        customer_name: 'Jannike Borg',
+        customer_career: ', Publisher'
     },
     {
         customer: 'assets/Images/customer2.png',
         customer_review: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
-        customer_name: 'LeBron Durant, Flight attendant'
+        customer_name: 'LeBron Durant',
+        customer_career: ', Flight attendant'
     },
     {
         customer: 'assets/Images/customer3.png',
         customer_review: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
-        customer_name: 'Kaarel Piho, Chiropodist'
+        customer_name: 'Kaarel Piho',
+        customer_career: ', Chiropodist'
     }
 ];
 
 const renderReviews = reviews => {
-    const container = document.getElementById('reviewsection');
+    const container = document.getElementById('the_reviews');
         reviews.forEach(review => {
         container.innerHTML += `
-            <div class = "reviews">
-                <img src="${reviews.customer}" alt="${offer.customer_name}" className ="ratingrectangle">
-                <div>
-                    <p>${reviews.customer_review}</p>
-                    <p>${reviews.customer_name}</p>
+                <div class = "customer_reviews">
+                    <img src="${review.customer}" alt="${review.customer_name}" class ="customer_image">
+                    <div>
+                        <p class="header_para">${review.customer_review}</p>
+                        <p class="customer_name">${review.customer_name}<span class="customer_title">${review.customer_career}</span></p>
+                    </div>
                 </div>
-            </div>
         `;
     })
 }
 
 renderReviews(reviews);
+
+
+
+const recentPosts = [
+    {
+        postimage: 'assets/images/post_image1.png',
+        postdate: 'May 23, 2022',
+        posticon: 'assets/icons/time.svg',
+        posttime: '5 minutes',
+        postcaption: 'My trip to Athens',
+        postcontent: 'It would seem that in a city where Theseus, Plato and Epicurus once walked, the very idea of the subway is alien to the city, but already...'
+    },
+    {
+        postimage: 'assets/images/post_image2.png',
+        postdate: 'May 23, 2022',
+        posticon: 'assets/icons/time.svg',
+        posttime: '1 minute',
+        postcaption: 'Vilnius resorts',
+        postcontent: 'I haven\'t seen any resorts in Vilnius, but there are wonderful people and pubs'
+    },
+    {
+        postimage: 'assets/images/post_image3.png',
+        postdate: 'May 23, 2022',
+        posticon: 'assets/icons/time.svg',
+        posttime: '15 minutes',
+        postcaption: 'Tips for flying on a plane',
+        postcontent: 'If you have a fear of flying, here\'s a helpful tip: bring your co-pilot so you can take a nap while he steers the plane for you'
+    }
+];
+
+const renderRecentPost = recentPosts => {
+    const container = document.getElementById('recentpostsection');
+        recentPosts.forEach(post => {
+        container.innerHTML += `
+                <div class="recentPosts">
+                    <img src="${post.postimage}" alt="${post.postcaption}" className ="post-img">
+                    <div class="posttext-division">
+                        <div class="postdate_time">
+                            <p class="postdate">${post.postdate}</p>
+                            <div class="posttime">
+                                <img src="${post.posticon}" alt="${post.postcaption}" className ="time-icon">   
+                                <p class="post_timing">${post.posttime}</p> 
+                            </div>
+                        </div>
+                        <h3 class="header_h3">${post.postcaption}</h3>
+                        <p class="header_para">${post.postcontent}</p>
+                    </div>
+                </div>
+        `;
+        })
+}
+
+renderRecentPost(recentPosts);
+
+
+
+

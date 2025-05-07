@@ -4,19 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Website</title>
-    <link rel="stylesheet" href="">
-</head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
 <body>
     <div class="wrapper">
+        <!-------------PAGE HEADER--------------->
         <header id="navsection">
             <div class="menu_logo">
                 <img class="mobile_menu" src="Assets/icons/menu.svg" alt="Hamburger Menu">
-                <h1 class="logotext"> Your<Span>.logo</Span></h1>
+                <h1 class="logotext"> Your<span class="logospan">.logo</span></h1>
             </div>
             <div class="usericon">
                 <img class="usericonimg" src="Assets/icons/usersicon.svg"  alt="Usericon iamge">
             </div>
         </header>
+
+        <!-------------HIDDEN SECTION--------------->
+        <section id="main_mobile_menu" class="mobile-menu-container hidden">
+            <header id="navsection">
+                <div class="menu_logo">
+                    <img class="mobile_menu" src="Assets/icons/menu.svg" alt="Hamburger Menu">
+                    <h1 class="logotext"> Your <Span class="logospan">.logo</Span></h1>
+                </div>
+                <div class="usericon">
+                    <img class="usericonimg" src="Assets/icons/usersicon.svg"  alt="Usericon iamge">
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#">Last Minute Deals</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                    <div class="extras">
+                    <span>$</span>
+                    <span>RU</span>
+                </div>
+                <div class="footer_icons">
+                    <a href="#"><img src="Assets/icons/Phone_black.svg" alt="Phone"></a>
+                    <a href="#"><img src="Assets/icons/Facebook_black.svg" alt="Facebook"></a>
+                    <a href="#"><img src="Assets/icons/youtube_black.svg" alt="YouTube"></a>
+                    <a href="#"><img src="Assets/icons/Instagram_black.svg" alt="Instagram"></a>
+                    <a href="#"><img src="Assets/icons/telegram_black.svg" alt="Telegram"></a>
+                </div>
+            </nav>
+        </section>
+
+        <!-------------WHY CHOOSE US SECTION--------------->
         <section id="herosection">
             <div class="herotext">
                 <h1 class="h1herotext">Find an apartment for your vacation</h1>
@@ -24,20 +61,56 @@
             </div>
             <div class="herosec_button">
                 <button class="herosecbtn">
-                    <img class="searchbtn-location" src="Assets/icons/Searchlocation.svg" alt="searchbtn-location">
-                    <p class="searchtbn-text">Where <br> Search Destination</p>
+                    <div class="searchbtn_textloc">
+                        <img class="searchbtn-location" src="Assets/icons/Searchlocation.svg" alt="searchbtn-location">
+                        <div>
+                            <p class="searchbtn-maintext">Where</p>
+                            <p class="searchbtn-othertext">Search Destination</p>
+                        </div>
+                    </div>
                     <img class="searchbtn"  src="Assets/icons/Search_btn.svg" alt="Search button">
                 </button>
             </div>
         </section>
         <section id="whyussection">
-            <h2 class="whyussection_text"></h2>
-            <p class="whyussection_para"></p>
+            <h2 class="section_maintext">Why Choose Us</h2>
+            <p class="section_paratext">The main reason is because our competitors have disgusting sites, but we can' t write that here, so the text here will be different</p>
         </section>
-        <section id="specialoffersection"></section>
-        <section id="reviewsection"> </section>
-        <section id="recentpostsection"></section>
-        <footer class="footersection"></footer>
+
+
+        <!-------------SPECIAL OFFER SECTION--------------->
+        <section id="specialoffersection">
+            <h2 class="section_maintext special">Special Offers</h2>
+        </section>
+
+        <!-------------REVIEWS SECTION--------------->
+        <section id="reviewsection"> 
+            <h2 class="section_maintext review">Reviews</h2>
+            <div id="the_reviews"></div>
+            <button class="reviews_btn">More Reviews</button>
+        </section>
+        <section id="recentpostsection">
+            <h2 class="section_maintext posts">Recent Posts</h2>
+        </section>
+        <footer id="footersection">
+            <div class="footer_subnews">
+                <h3 class="footer_subnewstext">Subscribe to our Newsletter</h3>
+                <p class="footer_subnewsemail">Your email</p>
+                <button class="subnewsbtn">
+                    <img src="Assets/icons/Send-btn.svg" alt="send button icon" class="subnews_icon">
+                </button>
+                <hr>
+                <h1 class="logotext"> Your<span class="logospan">.logo</span></h1>
+                <div class="footer_icons">
+                        <a href="#"> <img src="Assets/icons/Phone_black.svg" alt="Phone_black icon" class="Phone_black"></a>
+                        <a href="#"> <img src="Assets/icons/Facebook_black.svg" alt="Facebook_black icon" class="Facebook_black"></a>
+                        <a href="#"> <img src="Assets/icons/youtube_black.svg" alt="youtube_black icon" class="youtube_black"></a>
+                        <a href="#"> <img src="Assets/icons/Instagram_black.svg" alt="Instagram_black icon" class="Instagram_black"></a>
+                        <a href="#"> <img src="Assets/icons/telegram_black.svg" alt="telegram_black icon" class="telegram_black"></a>
+                </div>
+                <p class="copyright">Designed by <a href="#">Delvig</a></p>
+            </div>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
