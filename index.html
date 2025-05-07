@@ -11,25 +11,25 @@
 <body>
     <div class="wrapper">
         <!-------------PAGE HEADER--------------->
-        <header id="navsection">
+        <header class="navsection">
             <div class="menu_logo">
-                <img class="mobile_menu" src="Assets/icons/menu.svg" alt="Hamburger Menu">
-                <h1 class="logotext"> Your<span class="logospan">.logo</span></h1>
+                <img id="openMenu" class="mobile_menu" src="Assets/icons/menu.svg" alt="Hamburger Menu">
+                <h1 class="logotext">Your<span class="logospan">.logo</span></h1>
             </div>
             <div class="usericon">
-                <img class="usericonimg" src="Assets/icons/usersicon.svg"  alt="Usericon iamge">
+                <img class="usericonimg" src="Assets/icons/usersicon.svg" alt="User icon image">
             </div>
         </header>
-
-        <!-------------HIDDEN SECTION--------------->
-        <section id="main_mobile_menu" class="mobile-menu-container hidden">
-            <header id="navsection">
+        
+        <!-- Hidden Mobile Menu Section -->
+        <section id="main_mobile_menu" class="mobile-menu-container">
+            <header class="navsection">
                 <div class="menu_logo">
-                    <img class="mobile_menu" src="Assets/icons/menu.svg" alt="Hamburger Menu">
-                    <h1 class="logotext"> Your <Span class="logospan">.logo</Span></h1>
+                    <img id="closeMenu" class="mobile_menu" src="Assets/icons/Closemenu-btn.svg" alt="Close Menu">
+                    <h1 class="logotext">Your<span class="logospan">.logo</span></h1>
                 </div>
                 <div class="usericon">
-                    <img class="usericonimg" src="Assets/icons/usersicon.svg"  alt="Usericon iamge">
+                    <img class="usericonimg" src="Assets/icons/usersicon.svg" alt="User icon image">
                 </div>
             </header>
             <nav>
@@ -39,7 +39,7 @@
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
-                    <div class="extras">
+                <div class="extras">
                     <span>$</span>
                     <span>RU</span>
                 </div>
@@ -52,6 +52,7 @@
                 </div>
             </nav>
         </section>
+        
 
         <!-------------WHY CHOOSE US SECTION--------------->
         <section id="herosection">
@@ -92,6 +93,7 @@
         <section id="recentpostsection">
             <h2 class="section_maintext posts">Recent Posts</h2>
         </section>
+        <!-------------FOOTER SECTION--------------->
         <footer id="footersection">
             <div class="footer_subnews">
                 <h3 class="footer_subnewstext">Subscribe to our Newsletter</h3>

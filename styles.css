@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #fff;
     color: #333;
 }
@@ -15,11 +15,11 @@ body {
     max-width: 360px;
     width: 100%;
     margin: 0 auto;
-    overflow-x: hidden; /* Prevents horizontal scroll from mobile menu */
+    overflow-x: hidden; 
     position: relative;
 }
 
-#navsection{
+.navsection{
     padding: 16px;
     display: flex;
     justify-content: space-between;
@@ -35,6 +35,7 @@ body {
 .mobile_menu{
     width: 32px;
     height: auto;   
+    cursor: pointer;
 }
 
 .usericon{
@@ -63,12 +64,18 @@ body {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 80%;
+    width: 100%;
+    max-width: 360px;
     height: 100vh;
     background-color: #fff;
     z-index: 999;
     padding: 2rem 1rem;
     transition: left 0.3s ease-in-out;
+}
+
+#closeMenu{
+    width: 24px;
+    height: 24px;
 }
 
 .mobile-menu-container nav ul {
@@ -77,10 +84,13 @@ body {
 }
 
 .mobile-menu-container nav ul li {
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem
 }
 
 .mobile-menu-container nav a {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 16px;
     text-decoration: none;
     color: #333;
     font-weight: 500;
@@ -97,6 +107,18 @@ body {
 
 .hidden {
     display: none;
+}
+
+.extras{
+    padding-bottom: 12rem;
+}
+.extras span{
+    color: #EE685F;
+    text-decoration: underline 2px dotted;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-right: 32px;
 }
 
 /*-----END OF HIDDEN MENU-----------*/

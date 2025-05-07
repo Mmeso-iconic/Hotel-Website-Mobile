@@ -203,4 +203,19 @@ renderRecentPost(recentPosts);
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const openMenuIcon = document.getElementById('openMenu');   // hamburger
+    const closeMenuIcon = document.getElementById('closeMenu'); // close icon
+    const mobileMenu = document.getElementById('main_mobile_menu');
+
+    if (openMenuIcon && closeMenuIcon && mobileMenu) {
+        openMenuIcon.addEventListener('click', () => {
+            mobileMenu.classList.add('active'); // slide in
+        });
+
+        closeMenuIcon.addEventListener('click', () => {
+            mobileMenu.classList.remove('active'); // slide out
+        });
+    }
+});
 
