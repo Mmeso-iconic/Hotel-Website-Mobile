@@ -32,10 +32,10 @@ Check out the live demo of the project: (https://hotel-website-mobile-qyue.onren
 ---
 
 ##Loom Links
-I seperated the loom video into two due to issues with recording on my system
-Loom Link Part 1 : (https://www.loom.com/share/b87944cf15874d39912c470a58e11c67?sid=c25da73b-f99b-4dac-97e5-5ad3fe408213)
-Loom Link Par 2 : (https://www.loom.com/share/989fd79d33de45cba6954897c237e8d3?sid=bf65f7b8-071f-4c21-9891-d1c493d8f670)
-
+The Loom Links are separated because the time limit is just 5 minutes in a non-premium version.
+Loom Link Part 1 : HTML video (https://www.loom.com/share/140002e96a6f429f8169992b9f735926?sid=40266982-51bd-46f6-91b7-63456b8c235d)
+Loom Link Part 2 : Javascript video(https://www.loom.com/share/b78c3989cda6432b815f15d5697711c8?sid=1bd126b5-5c8e-4069-8ec7-860ba5c4bd99)
+Loom Link Part 3 : CSS video (https://www.loom.com/share/f2df6f8bfe1c41249052b6f986830f14?sid=07e75547-066b-4e45-a91f-23b816e38371)
 
 ## Features
 
