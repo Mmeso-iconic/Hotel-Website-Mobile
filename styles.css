@@ -12,8 +12,8 @@ body {
 
 /* Wrapper container to center and contain layout */
 .wrapper{
-    max-width: 360px;
-    width: 100%;
+    max-width: 100%;
+    width: 360px;
     margin: 0 auto;
     overflow-x: hidden; 
     position: relative;
@@ -503,15 +503,5 @@ hr{
     color: #2A90D9;
     font-weight: 600;
 }
-
-
-
-
-
-
-
-
-
-
 
 
