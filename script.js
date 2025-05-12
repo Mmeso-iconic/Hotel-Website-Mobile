@@ -8,7 +8,7 @@ const whychooseus = [
     {
         title: 'Simple search process',
         paragraph: "We checked it out, even the kid did it, but it was my mom's friend's son",
-        Image: 'Assets/images/searchicon.png'
+        Image: 'Assets/images/Searchicon.png'
     },
     {
         title: '24/7 Support',
@@ -46,7 +46,7 @@ const specialOffers = [
         ratingnum: '4.8',
         faveimage: 'Assets/icons/favbtn_icon.svg',
         favecircle: 'Assets/icons/favbtn-circle.svg',
-        offerimage: 'Assets/images/hotel_bedroom1.png',
+        offerimage: 'Assets/images/Hotel_Bedroom1.png',
         Caption: 'Wilderness Club at Big Ceddar',
         date: '28 October — 1 November',
         price: '$2016',
@@ -58,7 +58,7 @@ const specialOffers = [
         ratingnum: '4.8',
         faveimage: 'Assets/icons/favbtn_icon.svg',
         favecircle: 'Assets/icons/favbtn-circle.svg',
-        offerimage: 'Assets/images/Hotel_bedroom2.png',
+        offerimage: 'Assets/images/Hotel_Bedroom2.png',
         Caption: 'Wilderness Club at Big Ceddar',
         date: '28 October — 1 November',
         price: '$2016',
@@ -70,7 +70,7 @@ const specialOffers = [
         ratingnum: '4.8',
         faveimage: 'Assets/icons/favbtn_icon.svg',
         favecircle: 'Assets/icons/favbtn-circle.svg',
-        offerimage: 'Assets/images/hotel_bedroom3.png',
+        offerimage: 'Assets/images/Hotel_Bedroom3.png',
         Caption: 'Wilderness Club at Big Ceddar',
         date: '28 October — 1 November',
         price: '$2016',
@@ -112,19 +112,19 @@ renderSpecialOffers(specialOffers);
 // REVIEWS
 const reviews = [
     {
-        customer: 'Assets/Images/customer1.png',
+        customer: 'Assets/images/Customer1.png',
         customer_review: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
         customer_name: 'Jannike Borg',
         customer_career: ', Publisher'
     },
     {
-        customer: 'Assets/Images/customer2.png',
+        customer: 'Assets/images/Customer2.png',
         customer_review: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
         customer_name: 'LeBron Durant',
         customer_career: ', Flight attendant'
     },
     {
-        customer: 'Assets/Images/customer3.png',
+        customer: 'Assets/images/Customer3.png',
         customer_review: 'I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.',
         customer_name: 'Kaarel Piho',
         customer_career: ', Chiropodist'
@@ -154,7 +154,7 @@ const recentPosts = [
     {
         postimage: 'Assets/images/post_image1.png',
         postdate: 'May 23, 2022',
-        posticon: 'Assets/icons/time.svg',
+        posticon: 'Assets/icons/Time.svg',
         posttime: '5 minutes',
         postcaption: 'My trip to Athens',
         postcontent: 'It would seem that in a city where Theseus, Plato and Epicurus once walked, the very idea of the subway is alien to the city, but already...'
@@ -162,7 +162,7 @@ const recentPosts = [
     {
         postimage: 'Assets/images/post_image2.png',
         postdate: 'May 23, 2022',
-        posticon: 'Assets/icons/time.svg',
+        posticon: 'Assets/icons/Time.svg',
         posttime: '1 minute',
         postcaption: 'Vilnius resorts',
         postcontent: 'I haven\'t seen any resorts in Vilnius, but there are wonderful people and pubs'
@@ -170,7 +170,7 @@ const recentPosts = [
     {
         postimage: 'Assets/images/post_image3.png',
         postdate: 'May 23, 2022',
-        posticon: 'Assets/icons/time.svg',
+        posticon: 'Assets/icons/Time.svg',
         posttime: '15 minutes',
         postcaption: 'Tips for flying on a plane',
         postcontent: 'If you have a fear of flying, here\'s a helpful tip: bring your co-pilot so you can take a nap while he steers the plane for you'
