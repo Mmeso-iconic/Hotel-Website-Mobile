@@ -42,10 +42,10 @@ renderWhyChooseUs(whychooseus);
 const specialOffers = [
     {
         ratingimg1: 'Assets/icons/Rating_Rectangle.svg',
-        ratingimg2: 'Assets/icons/Ratingstar.svg',
+        ratingimg2: 'Assets/icons/RatingStar.svg',
         ratingnum: '4.8',
         faveimage: 'Assets/icons/favbtn_icon.svg',
-        favecircle: 'Assets/icons/favbtn-circle.svg',
+        favecircle: 'Assets/icons/Favbtn-circle.svg',
         offerimage: 'Assets/images/Hotel_Bedroom1.png',
         Caption: 'Wilderness Club at Big Ceddar',
         date: '28 October — 1 November',
@@ -54,10 +54,10 @@ const specialOffers = [
     },
     {
         ratingimg1: 'Assets/icons/Rating_Rectangle.svg',
-        ratingimg2: 'Assets/icons/Ratingstar.svg',
+        ratingimg2: 'Assets/icons/RatingStar.svg',
         ratingnum: '4.8',
         faveimage: 'Assets/icons/favbtn_icon.svg',
-        favecircle: 'Assets/icons/favbtn-circle.svg',
+        favecircle: 'Assets/icons/Favbtn-circle.svg',
         offerimage: 'Assets/images/Hotel_Bedroom2.png',
         Caption: 'Wilderness Club at Big Ceddar',
         date: '28 October — 1 November',
@@ -66,10 +66,10 @@ const specialOffers = [
     },
     {
         ratingimg1: 'Assets/icons/Rating_Rectangle.svg',
-        ratingimg2: 'Assets/icons/Ratingstar.svg',
+        ratingimg2: 'Assets/icons/RatingStar.svg',
         ratingnum: '4.8',
         faveimage: 'Assets/icons/favbtn_icon.svg',
-        favecircle: 'Assets/icons/favbtn-circle.svg',
+        favecircle: 'Assets/icons/Favbtn-circle.svg',
         offerimage: 'Assets/images/Hotel_Bedroom3.png',
         Caption: 'Wilderness Club at Big Ceddar',
         date: '28 October — 1 November',
