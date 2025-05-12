@@ -28,7 +28,7 @@ This project is a hotel website layout created to practice building visually eng
 
 ## Live Demo
 
-Check out the live demo of the project: (https://hotel-website-mobile-qyue.onrender.com) 
+Check out the live demo of the project: (https://hotel-website-mobile-l6cd.onrender.com/) 
 ---
 
 ##Loom Links
