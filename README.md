@@ -28,8 +28,7 @@ This project is a hotel website layout created to practice building visually eng
 
 ## Live Demo
 
-Check out the live demo of the project: (https://hotel-website-mobile-l6cd.onrender.com/) 
----
+Check out the live demo of the project: (https://hotel-website-mobile-l6cd.onrender.com/)
 
 ##Loom Links
 The Loom Links are separated because the time limit is just 5 minutes in a non-premium version.
