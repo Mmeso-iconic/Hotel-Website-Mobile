@@ -12,8 +12,8 @@ body {
 
 /* Wrapper container to center and contain layout */
 .wrapper{
-    max-width: 100%;
-    width: 360px;
+    max-width: 22.5rem;
+    width: 100%;
     margin: 0 auto;
     overflow-x: hidden; 
     position: relative;
@@ -156,7 +156,7 @@ body {
     position: relative;
     background-color: #fff;
     border-radius: 100px;
-    max-width: 328px;
+    max-width: 20.5rem;;
     width:100%;
     max-height: 70px;
     height: 100%;
@@ -473,7 +473,7 @@ body {
 
 .subnews_icon{
     position: relative;
-    right: -145px;
+    right: -45%;
     width: 40px;
     height: 38px;
     top: -5px;
@@ -504,4 +504,97 @@ hr{
     font-weight: 600;
 }
 
+
+
+/* Tablet View (min-width: 600px) */
+@media (min-width: 600px) {
+.wrapper {
+    max-width: 100%;
+    }
+
+.herosecbtn {
+    left: 24px;
+    max-width: 500px;
+    }
+
+    .Whychooseus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    text-align: left;
+    }
+
+.recentPosts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    }
+
+    .customer_reviews {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    }
+
+.subnewsbtn {
+    width: 100%;
+    }
+     
+.subnews_icon{
+    position: relative;
+    right: -45%;
+    width: 40px;
+    height: 38px;
+    top: -5px;
+}
+
+  }
+  
+  /* Desktop View (min-width: 990px) */
+  @media (min-width: 900px) {
+    .wrapper {
+      max-width: 100%;
+    }
+  
+    .navsection {
+      padding: 24px;
+    }
+  
+    .herotext {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px;
+    }
+  
+    .h1herotext {
+      font-size: 48px;
+    }
+  
+    .herosec-paragraph {
+      font-size: 18px;
+      padding-right: 0;
+    }
+    .subnews_icon{
+    position: relative;
+    right: -50%;
+    width: 40px;
+    height: 38px;
+    top: -5px;
+}
+  
+    #whyussection,
+    #specialoffersection,
+    #reviewsection,
+    #recentpostsection,
+    #footersection {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  
+    .Whychooseus,
+    .recentPosts {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
 
